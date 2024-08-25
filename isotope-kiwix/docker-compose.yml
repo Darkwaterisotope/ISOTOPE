@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: isotope-kiwix_1
+      APP_PORT: 3000
+    
+  kiwix-serve:
+    ports:
+      - 1234:8080
+    image: ghcr.io/kiwix/kiwix-serve:latest
+    volumes:
+      - /home/umbrel/zims:/data
+    command:
+      - '*.zim'
+    restart: always
+
