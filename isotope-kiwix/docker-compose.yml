@@ -16,5 +16,5 @@ services:
       - /home/umbrel/zims:/data
     command:
       - '*.zim'
-    restart: always
+    restart: unless-stopped
 

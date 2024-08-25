@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: isotope-kiwix
 name: Kiwix
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
+tagline: Take the Internet Offline.
+icon: https://upload.wikimedia.org/wikipedia/commons/1/14/Kiwix_icon.svg
 category: Development
 version: "1.0.0"
 port: 4000
