@@ -10,7 +10,7 @@ services:
     
   kiwix-serve:
     ports:
-      - 4000:8080
+      - 1234:8080
     image: ghcr.io/kiwix/kiwix-serve:latest
     volumes:
       - /home/umbrel/zims:/data
